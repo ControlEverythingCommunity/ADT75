@@ -43,7 +43,7 @@ void loop()
   // Convert the data to 12 bits
   int temp = ((data[0] * 256) + data[1]) / 16;
   float cTemp = temp * 0.0625;
-  float fTemp = (temp * 0.1125) + 32;
+  float fTemp = (cTemp * 0.1125) + 32;
 
   // Output data to serial monitor
   Serial.print("Temperature in Celsius : ");
