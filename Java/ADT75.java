@@ -26,7 +26,7 @@ public class ADT75
 		// Convert the data to 12-bits
 		int temperature = ((data[0] & 0xFF) * 256 + (data[1] & 0xFF)) / 16;
 		double cTemp = temperature * 0.0625;
-		double fTemp = (temperature * 0.1125) +32;
+		double fTemp = (cTemp * 1.8) +32;
 		
 		// Output data to screen
 		System.out.printf("Temperature in Celsius : %.2f C %n", cTemp);
