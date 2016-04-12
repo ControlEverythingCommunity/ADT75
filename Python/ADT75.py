@@ -18,7 +18,7 @@ data = bus.read_i2c_block_data(0x48, 0x00, 2)
 # Convert the data to 12-bits
 temp = ((data[0] * 256) + data[1]) / 16
 cTemp = temp * 0.0625
-fTemp = (temp * 0.1125) + 32
+fTemp = (cTemp * 1.8) + 32
 
 # Output data to screen
 print "Temperature in Celsius : %.2f C" %cTemp
