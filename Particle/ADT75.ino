@@ -50,7 +50,7 @@ void loop()
   // Convert the data to 12 bits
   temp = ((data[0] * 256) + data[1]) / 16;
   cTemp = temp * 0.0625;
-  fTemp = (temp * 1.8) + 32;
+  fTemp = (cTemp * 1.8) + 32;
 
   // Output data to dashboard
   Particle.publish("Temperature in Celsius : ", String(cTemp));
