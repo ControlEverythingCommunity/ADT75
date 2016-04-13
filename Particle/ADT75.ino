@@ -52,7 +52,7 @@ void loop()
   if(temp > 2047)
   {
     temp -= 4096;	
-	}
+  }
   cTemp = temp * 0.0625;
   fTemp = (cTemp * 1.8) + 32;
 
