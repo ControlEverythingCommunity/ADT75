@@ -49,6 +49,10 @@ void loop()
 
   // Convert the data to 12 bits
   temp = ((data[0] * 256) + data[1]) / 16;
+  if(temp > 2047)
+  {
+    temp -= 4096;	
+	}
   cTemp = temp * 0.0625;
   fTemp = (cTemp * 1.8) + 32;
 
