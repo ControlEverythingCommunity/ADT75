@@ -68,7 +68,7 @@ Download (or git pull) the code in Beaglebone Black.
 
 Compile the c program.
 ```cpp
-$>gcc ADT750.c -o ADT75
+$>gcc ADT75.c -o ADT75
 ```
 Run the c program.
 ```cpp
