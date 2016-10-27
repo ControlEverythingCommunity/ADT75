@@ -10,7 +10,7 @@
 // ADT75 I2C address is 0x48(72)
 #define Addr 0x48
 
-float cTemp = 0.0, fTemp = 0.0;
+double cTemp = 0.0, fTemp = 0.0;
 int temp = 0;
 void setup()
 {
